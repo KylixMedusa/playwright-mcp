@@ -1,5 +1,5 @@
 {
-  "name": "@playwright/mcp",
+  "name": "@sentinel/playwright-mcp",
   "version": "0.0.29",
   "description": "Playwright Tools for MCP",
   "type": "module",
