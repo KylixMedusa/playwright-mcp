@@ -16,6 +16,7 @@
 
 import common from './tools/common.js';
 import console from './tools/console.js';
+import cookies from './tools/cookies.js';
 import dialogs from './tools/dialogs.js';
 import files from './tools/files.js';
 import install from './tools/install.js';
@@ -23,18 +24,18 @@ import keyboard from './tools/keyboard.js';
 import navigate from './tools/navigate.js';
 import network from './tools/network.js';
 import pdf from './tools/pdf.js';
+import screenshot from './tools/screenshot.js';
 import snapshot from './tools/snapshot.js';
 import tabs from './tools/tabs.js';
-import screenshot from './tools/screenshot.js';
 import testing from './tools/testing.js';
+import type { Tool } from './tools/tool.js';
 import vision from './tools/vision.js';
 import wait from './tools/wait.js';
-
-import type { Tool } from './tools/tool.js';
 
 export const snapshotTools: Tool<any>[] = [
   ...common(true),
   ...console,
+  ...cookies,
   ...dialogs(true),
   ...files(true),
   ...install,
